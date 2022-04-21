@@ -1,0 +1,19 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: wxpay
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://121.4.68.5:3306/wxpay?serverTimezone=GMT%2B8&characterEncoding=utf-8
+    username: root
+    password: root
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:com/learn/wxpay/mapper/xml/*.xml
